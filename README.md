@@ -7,7 +7,7 @@ The best way to use a virtualenv. Once it's installed use the following bootstra
 virtualenv C1
 source C1/bin/activate
 pip install -r requirements.txt
-
+cp creds.py.sample creds.py
 ~~~~
 
 *Very important*
@@ -19,8 +19,11 @@ Update the creds.py with the uid, token and api_token. Happy to send to you, but
 python transactions_report.py 
 
 also supports various optional parameters including:
+
 --ignore-donuts
+
 --crystal-ball
+
 --ignore-cc-payments
 
 ## Testing
@@ -28,5 +31,9 @@ Not as much coverage as I'd like, but covered the most important parts. The repo
 
 ## Future Improvements
 Allow for arbitrary grouping for reporting (not just by month)
+
+Filter by merchant name
+
 Better connection error/network reporting
+
 Caching
